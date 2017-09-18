@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    body {
+      background-color: #03A678;
+      color: white;
+    }
+    body, html, h1, h3, p {
+      margin: 0px;
+      padding: 0px;
+      font-family: Verdana, sanf-serif;
+    }
+
+    h1, h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding-bottom: 1px;
+      border-bottom: 2px solid white;
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 16px;
+    }
+
+    #video {
+      display: none;
+    }
+
+    canvas {
+      background-color: white;
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .footer {
+      position: absolute;
+      padding: 10px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Resort</h1>
+  <h3>
+    A experiment with showing live video feeds with
+    <a href="https://ipfs.io/" target="_blank">IPFS</a>
+    and
+    <a href="https://libp2p.io/" target="_blank">libp2p</a>
+  </h3>
+  <div id="feeds"></div>
+  <video id="video" width="128" height="128" autoplay></video>
+  <script src="build/index.js"></script>
+  <div class="footer">
+    <p>The source code for this experiment can be found here:
+    <a href="https://github.com/victorbjelkholm/resort">https://github.com/victorbjelkholm/resort</a></p>
+    <p>
+      If you can only see yourself, ask a friend to go to the same URL, or open
+      up the same URL in a new, incognito window.
+    </p>
+  </div>
+</body>
+</html>
