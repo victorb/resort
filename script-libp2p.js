@@ -177,7 +177,7 @@ window.addEventListener('load', () => {
       // Request webcam permissions
       navigator.mediaDevices.getUserMedia({ video: true }).then(function (stream) {
         // Write webcam data to video element
-        video.src = stream
+        video.srcObject = stream
         video.play()
       })
     }
