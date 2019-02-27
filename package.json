@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "browserify -t [ babelify ] script-libp2p.js -o build/index.js",
-    "dev": "watchify -v -t [ babelify ] script-libp2p.js -o build/index.js && http-server -c-1"
+    "dev": "mkdir build && watchify -v -t [ babelify ] script-libp2p.js -o build/index.js && http-server -c-1"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
