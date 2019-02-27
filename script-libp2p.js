@@ -46,7 +46,7 @@ const SEND_EACH_MS = 100
 const PROTOCOL = '/resort/0.1.0'
 // Which signal server to use, overwrite default while in dev
 // const SIGNAL_SERVER = '/ip4/127.0.0.1/ws/p2p-webrtc-star/ipfs/:peer-id'
-const SIGNAL_SERVER = '/dns4/star-signal.cloud.ipfs.team/wss/p2p-webrtc-star/ipfs/:peer-id'
+const SIGNAL_SERVER = '/dns4/ws-star.discovery.libp2p.io/tcp/443/wss/p2p-websocket-star/ipfs/:peer-id'
 
 // Create and start a libp2p Peer to use
 const startOwnPeer = (callback) => {
